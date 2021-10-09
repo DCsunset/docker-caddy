@@ -1,7 +1,7 @@
 FROM caddy:builder AS builder
 
 RUN xcaddy build \
-    --with https://github.com/greenpau/caddy-auth-jwt
+    --with github.com/greenpau/caddy-auth-jwt
 
 FROM caddy
 
